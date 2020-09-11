@@ -4,7 +4,6 @@ using static System.Console;
 
 namespace _01_Factory
 {
-
     public interface Shape
     {
         void Draw();
