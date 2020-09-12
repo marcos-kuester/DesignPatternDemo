@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using static System.Console;
+﻿using static System.Console;
 
 namespace _01_Factory
 {

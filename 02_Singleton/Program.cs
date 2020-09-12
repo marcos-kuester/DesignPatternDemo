@@ -1,40 +1,39 @@
-﻿using System;
-using static System.Console;
+﻿using static System.Console;
 
 namespace _02_Singleton
 {
-    class Program
+    public sealed class Singleton
     {
-        public sealed class Singleton
+        private static Singleton _instance = null;
+        private static int _instancesCount = 0;
+        private static int _count = 0;
+
+        private Singleton()
         {
-            private static Singleton _instance = null;
-            private static int _instancesCount = 0;
-            private static int _count = 0;
+            _instancesCount++;
+            WriteLine($"Singleton Instances: {_instancesCount}");
+        }
 
-            private Singleton()
+        public static Singleton GetSingleton()
+        {
+            if (_instance == null)
             {
-                _instancesCount++;
-                WriteLine($"Singleton Instances: {_instancesCount}");
-            }
-
-            public static Singleton GetSingleton()
-            {
-                if (_instance == null)
-                {
-                    _instance = new Singleton();
-                    return _instance;
-                }
-
+                _instance = new Singleton();
                 return _instance;
             }
 
-            public void AddCount()
-            {
-                WriteLine($"Count: {++_count}");
-            }
-
+            return _instance;
         }
 
+        public void AddCount()
+        {
+            WriteLine($"Count: {++_count}");
+        }
+
+    }
+
+    class Program
+    {
         static void Main(string[] args)
         {
             var singleton1 = Singleton.GetSingleton();
