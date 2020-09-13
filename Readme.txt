@@ -14,3 +14,4 @@ DESCRIPTION ...: DESIGN PATTERN DEMO
                  01.   FACTORY
                  02.   SINGLETON - LAZY LOADING
                  02.1. SINGLETON - THREAD SAFE
+                 03.   BUILDER (+ FLUENT INTERFACE)

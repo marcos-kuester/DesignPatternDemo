@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Factory", "01_Factory\01_Factory.csproj", "{0A3C448D-D693-40EC-96FD-538A30E04EB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Factory", "01_Factory\01_Factory.csproj", "{0A3C448D-D693-40EC-96FD-538A30E04EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Singleton", "02_Singleton\02_Singleton.csproj", "{AAAC454B-654F-42E7-A877-1A6443F476FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Singleton", "02_Singleton\02_Singleton.csproj", "{AAAC454B-654F-42E7-A877-1A6443F476FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Singleton_ThreadSafe", "02_Singleton_ThreadSafe\02_Singleton_ThreadSafe.csproj", "{A150246C-B8F6-4B35-B768-1443881BDF18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Singleton_ThreadSafe", "02_Singleton_ThreadSafe\02_Singleton_ThreadSafe.csproj", "{A150246C-B8F6-4B35-B768-1443881BDF18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AEBA8D0-746B-43C3-B6D2-3AD849EE6675}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.txt = Readme.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Builder", "03_Builder\03_Builder.csproj", "{F671F3F8-C094-4FDA-A78A-FD4885F762CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{A150246C-B8F6-4B35-B768-1443881BDF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A150246C-B8F6-4B35-B768-1443881BDF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A150246C-B8F6-4B35-B768-1443881BDF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F671F3F8-C094-4FDA-A78A-FD4885F762CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F671F3F8-C094-4FDA-A78A-FD4885F762CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F671F3F8-C094-4FDA-A78A-FD4885F762CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F671F3F8-C094-4FDA-A78A-FD4885F762CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
