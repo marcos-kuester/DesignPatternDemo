@@ -15,3 +15,4 @@ DESCRIPTION ...: DESIGN PATTERN DEMO
                  02.   SINGLETON - LAZY LOADING
                  02.1. SINGLETON - THREAD SAFE
                  03.   BUILDER (+ FLUENT INTERFACE)
+                 04.   DECORATOR
