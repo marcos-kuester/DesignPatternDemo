@@ -56,6 +56,11 @@ namespace _01_Factory
 
             var myCircle = shapeFactory.GetShape(ShapeType.Circle);
             myCircle.Draw();
+
+            // Result:
+            // -----------
+            // Draw Square
+            // Draw Circle
         }
     }
 }

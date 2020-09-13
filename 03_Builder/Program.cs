@@ -128,6 +128,28 @@ namespace _03_Builder
             htmlBuilder.AddChildElement(new HtmlElement("tr", ""))
                 .AddChildElement(new HtmlElement("tr", ""));
             WriteLine(htmlBuilder.ToString());
+
+            // Result:
+            // --------------------------
+            // <html>
+            //  <head>
+            //   <title>Builder Demo</title>
+            //   <script>alert('hello');</script>
+            //  </head>
+            //  <body>
+            //   the body content
+            //   <table>
+            //    <tr><th>Product</th></tr>
+            //	  <tr><td>Notebook</td></tr>
+            //   </table>
+            //  </body>
+            // </html>
+            //
+            // <html><head></head><body></body></html>
+            // <table><tr></tr><tr></tr></table>
+            // <html><head></head><body></body></html>
+            // <table><tr></tr><tr></tr></table>
+            // <table><tr></tr><tr></tr></table>
         }
     }
 }

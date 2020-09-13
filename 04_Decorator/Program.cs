@@ -94,6 +94,13 @@ namespace _04_Decorator
 
             var doubleBacon = new Bacon(ketchup);
             WriteLine($"{doubleBacon.GetDescription()} ${doubleBacon.Cost()}");
+
+            // Result:
+            //--------------------------------------------
+            // Cheese Burger $8,99
+            // Cheese Burger +Bacon $9,98
+            // Cheese Burger +Bacon +Ketchup $10,48
+            // Cheese Burger +Bacon +Ketchup +Bacon $11,47
         }
     }
 }

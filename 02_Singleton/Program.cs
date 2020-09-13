@@ -29,7 +29,6 @@ namespace _02_Singleton
         {
             WriteLine($"Count: {++_count}");
         }
-
     }
 
     class Program
@@ -45,6 +44,16 @@ namespace _02_Singleton
             singleton2.AddCount();
             singleton2.AddCount();
             singleton2.AddCount();
+
+            // Result:
+            // ----------------------
+            // Singleton Instances: 1
+            // Count: 1
+            // Count: 2
+            // Count: 3
+            // Count: 4
+            // Count: 5
+            // Count: 6
         }
     }
 }

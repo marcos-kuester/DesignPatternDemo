@@ -56,7 +56,17 @@ namespace _02_Singleton_ThreadSafe
             Parallel.Invoke(
                 () => FromA(),
                 () => FromB()
-            );            
+            );
+
+            // Result:
+            // --------------------------
+            // Singleton instances: 1
+            // Incremente Count: 2 from B
+            // Incremente Count: 1 from A
+            // Incremente Count: 3 from B
+            // Incremente Count: 5 from B
+            // Incremente Count: 4 from A
+            // Incremente Count: 6 from A
         }
 
         public static void FromA()
